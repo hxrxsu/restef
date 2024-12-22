@@ -1,0 +1,107 @@
+﻿<Page x:Class="restef.RestOrders"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:restef"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RestOrders">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="222*"/>
+            <RowDefinition Height="444*"/>
+            <RowDefinition Height="147*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="333*"/>
+            <ColumnDefinition Width="333*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#00000000"/>
+                <GradientStop Color="#FF144E47" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <ListBox x:Name="LB_Menu"  Grid.Row="1" Grid.Column="0" Background="Transparent" Foreground="White" ScrollViewer.VerticalScrollBarVisibility="Visible">
+            <!-- Холодные закуски -->
+            <ListBoxItem>Мясное плато - 485 ₽</ListBoxItem>
+            <ListBoxItem>Ребрышки BBQ - 550 ₽</ListBoxItem>
+            <ListBoxItem>Сырное плато - 1050 ₽</ListBoxItem>
+            <ListBoxItem>Сельдь с картофелем - 340 ₽</ListBoxItem>
+            <ListBoxItem>Брускетта с ростбифом - 400 ₽</ListBoxItem>
+            <ListBoxItem>Брускетта с форелью - 450 ₽</ListBoxItem>
+            <ListBoxItem>Лошади к куриной печени в сливках - 359 ₽</ListBoxItem>
+            <ListBoxItem>Тар-тар из лосося - 550 ₽</ListBoxItem>
+
+            <!-- Салаты -->
+            <ListBoxItem>Салат с говядиной и печеной грушей - 540 ₽</ListBoxItem>
+            <ListBoxItem>Салат с креветками и хрустящим беконом - 495 ₽</ListBoxItem>
+            <ListBoxItem>Салат Цезарь с курицей - 400 ₽</ListBoxItem>
+            <ListBoxItem>Салат Цезарь с креветками - 500 ₽</ListBoxItem>
+            <ListBoxItem>Салат с баклажаном и мягким сыром - 470 ₽</ListBoxItem>
+            <ListBoxItem>Охотничий салат - 380 ₽</ListBoxItem>
+
+            <!-- Горячее -->
+            <ListBoxItem>Филе миньон с эспрессо бэби-картофелем - 750 ₽</ListBoxItem>
+            <ListBoxItem>Шницель из свинины с пюи-лентосом - 550 ₽</ListBoxItem>
+            <ListBoxItem>Утиная грудка с пюре из груш - 650 ₽</ListBoxItem>
+            <ListBoxItem>Куриное бардо - 350 ₽</ListBoxItem>
+            <ListBoxItem>Форель с сельдевым соусом - 720 ₽</ListBoxItem>
+            <ListBoxItem>Поста карбонара - 380 ₽</ListBoxItem>
+            <ListBoxItem>Поста с форелью и креветками - 550 ₽</ListBoxItem>
+            <ListBoxItem>Поста с горгонзолой и грушами - 500 ₽</ListBoxItem>
+            <ListBoxItem>Бокардоски колбаски с копченой курицей в белом вине - 620 ₽</ListBoxItem>
+            <ListBoxItem>Ребра свиные BBQ - 600 ₽</ListBoxItem>
+
+            <!-- Горячие закуски -->
+            <ListBoxItem>Пивное трио - 780 ₽</ListBoxItem>
+            <ListBoxItem>Пивной дуэт - 600 ₽</ListBoxItem>
+            <ListBoxItem>Ассорти из копчений сыров - 840 ₽</ListBoxItem>
+            <ListBoxItem>Батат фри - 350 ₽</ListBoxItem>
+            <ListBoxItem>Стрейк с курицей - 380 ₽</ListBoxItem>
+            <ListBoxItem>Креветки темпиура - 450 ₽</ListBoxItem>
+            <ListBoxItem>Креветки, копченые с чесноком и зеленью - 530 ₽</ListBoxItem>
+            <ListBoxItem>Кольца кальмара - 350 ₽</ListBoxItem>
+            <ListBoxItem>Мидии в сливочном соусе барбекю - 700 ₽</ListBoxItem>
+
+            <!-- Супы -->
+            <ListBoxItem>Том ям с морепродуктами - 470 ₽</ListBoxItem>
+            <ListBoxItem>Лапша ло доджиняму по куриному бульону - 280 ₽</ListBoxItem>
+
+            <!-- Гарниры -->
+            <ListBoxItem>Картофельные дольки - 180 ₽</ListBoxItem>
+            <ListBoxItem>Картофель фри - 180 ₽</ListBoxItem>
+            <ListBoxItem>Овощи гриль - 350 ₽</ListBoxItem>
+
+            <!-- Соусы -->
+            <ListBoxItem>Соус горчица - 30 ₽</ListBoxItem>
+            <ListBoxItem>Соус карриса из печеной груши - 50 ₽</ListBoxItem>
+            <ListBoxItem>Соус чесночный - 50 ₽</ListBoxItem>
+            <ListBoxItem>Соус сливочный - 50 ₽</ListBoxItem>
+            <ListBoxItem>Соус сладкий чили - 50 ₽</ListBoxItem>
+
+            <!-- Десерты -->
+            <ListBoxItem>Чизкейк - 230 ₽</ListBoxItem>
+            <ListBoxItem>Яблочный штрудель - 230 ₽</ListBoxItem>
+            <ListBoxItem>Мороженое с топпингом - 230 ₽</ListBoxItem>
+        </ListBox>
+        <Label Content="Меню" FontSize="40" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.ColumnSpan="2"/>
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="57*"/>
+                <RowDefinition Height="175*"/>
+                <RowDefinition Height="35*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Ваши заказы" FontSize="30" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <ListBox x:Name="LB_Orders" Background="Transparent" Foreground="White" Grid.Row="1"/>
+            <Grid Grid.Row="2">
+                <Label x:Name="LBL_Sum" Content="" FontSize="15" VerticalContentAlignment="Center" Foreground="White"/>
+            </Grid>
+        </Grid>
+        <Button Content="Оформить заказ" Grid.Row="2" Background="#00DDDDDD" Foreground="#FFFDFDFD" Click="Button_Click"/>
+        <Button Content="Удалить заказ" Grid.Row="2" Grid.Column="1" Background="#00DDDDDD" Foreground="#FFFDFDFD" Click="Button_Click_1"/>
+    </Grid>
+</Page>
